@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/script.js"></script>
+    <script>
+         window.onload = function() {
+          setTimeout(function(){
+            var pagesA = new Array ("text1.html", "video1.html", "https://www.google.com/search?q=jennifer&tbm=isch&ved=2ahUKEwiV_Yvcm8joAhUBgqwKHXBwBGIQ2-cCegQIABAA&oq=jennifer&gs_lcp=CgNpbWcQAzIECCMQJzIECCMQJzIECAAQQzIECAAQQzIECAAQQzICCAAyBAgAEEMyAggAMgIIADICCABQNVjUBmDeB2gAcAB4AIABxAKIAesDkgEHMC4xLjAuMZgBAKABAaoBC2d3cy13aXotaW1n&sclient=img&ei=pg2FXpWSA4GEsgXw4JGQBg&bih=755&biw=1440");
+            var randompageA = pagesA[Math.floor(Math.random()*pagesA.length)];
+            window.location.href=randompageA;
+          },4000)
+        } 
+    </script>
+    <title>Jennifer</title>
+    <link rel="stylesheet" type="text/css" href="assets/main.css">   
+  </head>
+  <body>
+  <p>Jennifer</p>
+  <a>Text</a>
+  <a>Video</a>
+  <a>Image</a>
+
+  <!-- <iframe width="100" height="50" src="https://www.youtube.com/embed/chsIY4XoIJ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+  
+  <img id="name" src="https://ak1.ostkcdn.com/images/products/11580632/Sterling-Silver-Jennifer-Name-Pendant-on-16-Trace-Chain-c27e85c7-4833-47cf-8c80-aeaffc6a6483_600.jpg?impolicy=medium" width="300px">
+
+  </body>
+</html>

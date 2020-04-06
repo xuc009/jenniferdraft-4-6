@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/script.js"></script>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
+    <style>
+      html{
+        background-color: black;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="container">
+      <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/jlAoHaQbJkI?controls=0&autoplay=1&start=4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p class="fakelink" onclick ="clickpopup(event);" target="popup"  id="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/jennifer-lawrence-pencil-portrait-attila-hodgyai.jpg">https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/jennifer-lawrence-pencil-portrait-attila-hodgyai.jpg</p>
+
+    </div>
+
+    <button id ="back" onclick="window.location.href ='page.html'"></button>
+    <button id ="next" onclick="window.location.href ='page3.html'"></button>
+
+
+
+  <script>
+    function clickpopup(event) {
+      var elem = event.target;
+      var link = elem.getAttribute("id");
+      //var id = elem.getAttribute("id");
+
+      var windowwidth = window.innerWidth;
+      var windowheight = window.innerHeight;
+
+      var width = windowwidth * 0.25;
+      var height = windowheight * 0.50;
+
+      var left = windowwidth*10;
+      var top = windowheight/5;
+      
+      console.log("w,h:",width,height);
+      console.log("l,t:",left,top);
+
+      window.open(link, link, 'width='+ width + ',height=' + height + ',top=' + top + ',left=' + left); 
+      return false;
+    }
+  </script>
+  
+  </body>
+</html>

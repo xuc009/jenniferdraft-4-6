@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/script.js"></script>
+    <title>???</title>
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
+    <style>
+      html{
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="center">
+      <a class="link" onmouseover ="popup(event);" target="popup"  href="https://images.saatchiart.com/saatchi/773114/art/3304980/2374867-HKSZCUYG-7.jpg">https://images.saatchiart.com/saatchi/773114/art/3304980/2374867-HKSZCUYG-7.jpg</a>
+      <br>
+      <a class="link" onmouseover ="popup(event);" target="popup"  href="https://lh3.googleusercontent.com/proxy/-yj4EORqcENM8f6ZNh2UE_Rz99ZfftDIrw8_3sBa7ORD8cXW-8Aee3agctdFANDjs-3ACj0DAqBeEwXoMHVkqBQw3r-Fy0uBge335elj31_GHHSuNLr5i7mkKA8iFL0dEumzWfr2jA">https://lh3.googleusercontent.com/proxy/-yj4EORqcENM8f6ZNh2UE_Rz99ZfftDIrw8_3sBa7ORD8cXW-8Aee3agctdFANDjs-3ACj0DAqBeEwXoMHVkqBQw3r-Fy0uBge335elj31_GHHSuNLr5i7mkKA8iFL0dEumzWfr2jA</a>
+      <br>
+      <a class="link" onmouseover ="popup(event);" target="popup" href="https://i.pinimg.com/originals/50/ce/b3/50ceb3fd92c5ea6147f976ef0b4d6c5a.jpg">https://i.pinimg.com/originals/50/ce/b3/50ceb3fd92c5ea6147f976ef0b4d6c5a.jpg</a>
+      <br>
+      <a class="link" onmouseover ="popup(event);" target="popup" href="https://artist.com/photos/arts/extra-big/portrait-of-jennifer-lopez-with-dry-brush-technique-oil-paint-45217822.jpg">https://artist.com/photos/arts/extra-big/portrait-of-jennifer-lopez-with-dry-brush-technique-oil-paint-45217822.jpg</a>
+    </div>
+
+    <button id ="back" onclick="window.location.href =''"></button>
+    <button id ="next" onclick="window.location.href ='page4.html'"></button>
+
+
+  <script>
+    function popup(event) {
+      var elem = event.target;
+      var link = elem.getAttribute("href");
+      var id = elem.getAttribute("id");
+
+      var windowwidth = window.innerWidth;
+      var windowheight = window.innerHeight;
+
+      var width = windowwidth * 0.25;
+      var height = windowheight * 0.50;
+
+      var left = windowwidth*10;
+      var top = windowheight/5;
+      
+      console.log("w,h:",width,height);
+      console.log("l,t:",left,top);
+
+      window.open(link, link, 'width='+ width + ',height=' + height + ',top=' + top + ',left=' + left); 
+      return false;
+    }
+  </script>
+  
+  </body>
+</html>

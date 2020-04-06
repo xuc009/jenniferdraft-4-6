@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/script.js"></script>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
+    <script>
+      window.onload = function() {
+          setTimeout(function(){
+            window.location.href="page7.html";
+          },4000)
+        }
+    </script>
+    <style>
+      html{
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="center">
+      <iframe class="drawing" src="https://lh3.googleusercontent.com/proxy/-yj4EORqcENM8f6ZNh2UE_Rz99ZfftDIrw8_3sBa7ORD8cXW-8Aee3agctdFANDjs-3ACj0DAqBeEwXoMHVkqBQw3r-Fy0uBge335elj31_GHHSuNLr5i7mkKA8iFL0dEumzWfr2jA"></iframe>
+    </div>
+
+    <button id ="back" onclick="window.location.href ='page5.html'"></button>
+    <button id ="next" onclick="window.location.href ='page7.html'"></button>
+
+
+  <script>
+    function popup(event) {
+      var elem = event.target;
+      var link = elem.getAttribute("href");
+      var id = elem.getAttribute("id");
+
+      var windowwidth = window.innerWidth;
+      var windowheight = window.innerHeight;
+
+      var width = windowwidth * 0.25;
+      var height = windowheight * 0.50;
+
+      var left = windowwidth*10;
+      var top = windowheight/5;
+      
+      console.log("w,h:",width,height);
+      console.log("l,t:",left,top);
+
+      window.open(link, link, 'width='+ width + ',height=' + height + ',top=' + top + ',left=' + left); 
+      return false;
+    }
+  </script>
+  
+  </body>
+</html>

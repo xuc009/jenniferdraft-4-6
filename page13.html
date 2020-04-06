@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/script.js"></script>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
+    <style>
+      html{
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+
+    <a class="link" onmouseover ="popup(event);" target="popup"  href="https://images.app.goo.gl/ymbetubbJiZRrC8n6">https://images.app.goo.gl/ymbetubbJiZRrC8n6</a>
+
+    <div class="center">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pB1pV8zRVaw?controls=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     </div>
+    <button id ="back" onclick="window.location.href ='page12.html'"></button>
+    <button id ="next" onclick="window.location.href =''"></button>
+
+
+  <script>
+    function popup(event) {
+      var elem = event.target;
+      var link = elem.getAttribute("href");
+      var id = elem.getAttribute("id");
+
+      var windowwidth = window.innerWidth;
+      var windowheight = window.innerHeight;
+
+      var width = windowwidth * 0.25;
+      var height = windowheight * 0.50;
+
+      var left = windowwidth*10;
+      var top = windowheight/5;
+      
+      console.log("w,h:",width,height);
+      console.log("l,t:",left,top);
+
+      window.open(link, link, 'width='+ width + ',height=' + height + ',top=' + top + ',left=' + left); 
+      return false;
+    }
+  </script>
+  
+  </body>
+</html>

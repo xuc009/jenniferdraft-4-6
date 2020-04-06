@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/script.js"></script>
+    <title>???</title>
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
+    <style>
+      html{
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="links">
+      <iframe class ="selected" src="https://en.wikipedia.org/wiki/Jennifer_(given_name)"></iframe>
+      <iframe class ="selected" src="https://www.cs.princeton.edu/~jrex/"></iframe>
+      <iframe class ="selected" src="https://nameberry.com/babyname/Jennifer"></iframe>
+      <iframe class ="selected" src="http://jsteinkamp.com/"></iframe>
+      <iframe class ="selected" src="https://www.cheatsheet.com/entertainment/jennifer-lopez-slept-in-selena-quintanillas-bed-to-prep-for-her-film-role-as-the-late-singer.html/"></iframe>
+      <iframe class ="selected" src="https://pagesix.com/2020/03/31/bella-hadid-and-jennifer-lopez-have-this-bikini-in-common/"></iframe>
+      <iframe class ="selected" src="https://www.lpga.com/players/jennifer-song/88275/overview"></iframe>
+      <iframe class ="selected" src="https://www.lambdalegal.org/about-us/staff/jennifer-c-pizer"></iframe>
+      <iframe class ="selected" src="https://art.uga.edu/directory/jennifer-crenshaw"></iframe>
+      <iframe class ="selected" src="https://www.guinnessworldrecords.com/news/2019/10/friends-star-jennifer-aniston-claims-record-for-fastest-to-reach-one-million-inst-595437/"></iframe>
+      <iframe class ="selected" src="https://www.mirror.co.uk/3am/celebrity-news/brad-pitt-introduced-former-flame-21783808"></iframe>
+      <iframe class ="selected" src="https://www.jenniferfoltz.com/about"></iframe>
+      <iframe class ="selected" src="https://www.actors-express.com/people/jennifer-acker"></iframe>
+      <iframe class ="selected" src="https://www.ggc.edu/about-ggc/directory/jennifer-arrocena"></iframe>
+      <iframe class ="selected" src="https://www.remaxregencyatl.com/agents/19220374/jennifer-baxter/"></iframe>
+      <iframe class ="selected" src="https://www.jennifer-la-o.com/"></iframe>
+      <iframe class ="selected" src="https://www.philosophy.northwestern.edu/people/continuing-faculty/lackey-jennifer.html"></iframe>
+      <iframe class ="selected" src="http://artofjwood.com/about.html"></iframe>
+    </div>
+
+
+    <!-- <div id="newscontainer">
+      <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/dp5yr6coXVk?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/9Auq9mYxFEE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/G-sCNxj2M2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/UgySOthQ4Vw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class ="video"width="560" height="315" src="https://www.youtube.com/embed/U_XsRZXL2Ic?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div> -->
+
+  <script>
+    function popup(event) {
+      var elem = event.target;
+      var link = elem.getAttribute("href");
+        var id = elem.getAttribute("id");
+      var width = Math.floor(1+Math.random() * 1000);
+      var height = Math.floor(1+Math.random() * 1000);
+
+      var top = Math.floor(1+Math.random() * 1000);
+      var left = Math.floor(1+Math.random() * 1000);
+
+      window.open(link, link, 'width='+ width + ',height=' + height + ',top=' + top + ',left=' + left); 
+      return false;
+    }
+  </script>
+  
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/script.js"></script>
+    <script>
+       window.onload = function() {
+          setTimeout(function(){
+            window.location.href="page2.html";
+          },3000)
+        }
+    </script>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
+    <style>
+      html{
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="container">
+      <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/l-7LgSy6cT0" frameborder="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <button id ="back" onclick="window.location.href ='page.html'"></button>
+    <button id ="next" onclick="window.location.href ='page2.html'"></button>
+
+  
+  </body>
+</html>
